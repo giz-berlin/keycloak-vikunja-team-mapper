@@ -1,4 +1,4 @@
-FROM gradle:8.2-jdk17
+FROM gradle:9.4-jdk21
 
 RUN apt-get update
 RUN apt-get install -y sudo less jq
