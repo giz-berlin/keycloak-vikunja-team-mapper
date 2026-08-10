@@ -51,14 +51,18 @@ public class OIDCMapper extends AbstractOIDCProtocolMapper implements OIDCIDToke
             "Group Attribute for Name",
             "Attribute name on Keycloak Groups, which get mapped to Vikunja for team name. A group will only be sent to Vikunja if the attribute defined here is defined for this group.",
             ProviderConfigProperty.STRING_TYPE,
-            "vikunjaTeamName"
+            "vikunjaTeamName",
+            false,
+            true
         ));
         configProperties.add(new ProviderConfigProperty(
             GROUP_ATTRIBUTE_NAME_TEAM_DESCRIPTION_CONFIG,
             "Group Attribute for Description",
             "Attribute name on Keycloak Groups, which get mapped to Vikunja for team description.",
             ProviderConfigProperty.STRING_TYPE,
-            "vikunjaTeamDescription"
+            "vikunjaTeamDescription",
+            false,
+            true
         ));
         configProperties.add(new ProviderConfigProperty(
             GROUP_ATTRIBUTE_NAME_TEAM_IS_PUBLIC_CONFIG,
