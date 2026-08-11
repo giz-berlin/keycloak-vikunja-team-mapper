@@ -116,7 +116,7 @@ public class OIDCMapper extends AbstractOIDCProtocolMapper implements OIDCIDToke
         // Ensure all required settings are properly set
         if (teamNameAttributeName == null || defaultTeamIsPublicString == null) {
             LOGGER.debug("Some Vikunja team mapper settings are not properly set");
-            return null;
+            return Stream.empty();
         }
 
         Boolean defaultIsPublic = Boolean.valueOf(defaultTeamIsPublicString);
